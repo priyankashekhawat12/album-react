@@ -1,0 +1,247 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', '-apple-system', BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #EAC7C7;
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+input{
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+button{
+  outline: none;
+  border: 1px solid black;
+  cursor: none;
+}
+
+
+/* Navbar component style */
+.navbar{
+  width: 100%;
+  padding: 20px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  box-shadow: 4px 7px 20px 0px #292424bf;
+}
+.navbar h2{
+  width: fit-content;
+  padding: 2px;
+}
+
+.navbar button{
+  background-color: transparent;
+  color: #939B62;
+  border: 2px solid #939B62;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.navbar button:hover{
+  background-color: #939B62;
+  color: white;
+}
+
+/* AlbumsList component style */
+.albums-list{
+
+  width: 70%;
+  margin: auto;
+  padding-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.album-title{
+  width: 70%;
+  position: inherit;
+  
+  
+}
+
+/* List component style */
+.list{
+  width: 100%;
+  height: 150px;
+  background-color: #FFD4B2;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 3px 6px #f7b37a;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+}
+.list h3{
+  text-align: center;
+  text-transform: capitalize;
+}
+.buttons{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+}
+.update-btn{
+  color:black;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  
+}
+.update-btn:hover{
+  color:black;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 1px #c9aaaa;
+}
+.delete-btn{
+  cursor:pointer;
+  border: 0px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.delete-btn:hover{
+  color:rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 1px #786464;
+
+}
+
+/* UpdateAlbum component style */
+.update-album{
+  color: white;
+  padding-top: 73px;
+  width: 450px;
+  margin: auto;
+}
+.form-container{
+  color: white;
+  padding-top: 73px;
+  width: 450px;
+  margin: auto;
+}
+.inp-container{
+}
+
+#title-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#userid-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#album-title{
+  color: black;
+
+}
+
+.form-container button{
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* addAlbum container style */
+.AddAlbumContainer{
+  color: white;
+  padding-top: 73px;
+  width: 450px;
+  margin: auto;
+}
+
+#UserIDInput{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#TitleInput{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.AddAlbumForm{
+  padding: 10px;
+  margin-top: 50px;
+}
+.AddAlbumForm button{
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
+}
